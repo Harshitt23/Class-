@@ -1,11 +1,11 @@
 //write a funct that find the sum of two no.
 
-// function findsum(a,b) {
-//     return a+b;
-// }
+function findsum(a,b) {
+    return a+b;
+}
 
-// const answer = findsum(1,3)
-// console.log(answer);            
+const answer = findsum(1,3)
+console.log(answer);            
 
 
 
