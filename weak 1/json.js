@@ -12,11 +12,11 @@ function jsonMethods(jsonString) {
     console.log("Original JSON String:", jsonString);
   
     // Parsing JSON string to JavaScript object
-    let parsedObject = JSON.parse(jsonString);                                //it will take the string and parse the objects.
+    let parsedObject = JSON.parse(jsonString);                                    //it will take the string and parse/convert it into the objects.
     console.log("After JSON.parse():", parsedObject);
   
     // Stringifying JavaScript object to JSON string
-    let jsonStringified = JSON.stringify(sampleJSONString1);                      //it will convert the object into string with doublecorts-" ".
+    let jsonStringified = JSON.stringify(sampleJSONString1);                      //it will convert the object into string which has doublecorts-" ".
     console.log("After JSON.stringify():", jsonStringified);
   }
   
