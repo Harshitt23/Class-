@@ -40,7 +40,7 @@ you are saying:
 
 
 //----------Promises->----------------------------------------------------------------------------------------------------------------------------------
-
+//promises are just a better way to write async. functiont
 //now this is an example of async function using CallBack. but there is a way to write it more better, not this ugly way above--
 //the way is to write it using Promises. - pretty good
 
@@ -60,6 +60,17 @@ function onDone(data){
 Readfile().then(onDone)
 
 //using promises , it is  a cleaner way to write ur code. , hence optimizing the entire code and readability.
+
+//another example of promise and this approach uses callback.
+function myownsettimeoutfunciton(fn, duration){
+    setTimeout(fn, duration);
+}
+
+myownsettimeoutfunciton(function(){
+    console.log("hi there");
+}, 1000);
+
+
 
 
 
