@@ -1,3 +1,7 @@
+/*your javascript thread cannot do everything synchronously, like reading a file, calling somone, sending a network request ..
+thats why we have asynchronous function in javascript*/
+
+
 //example of async. function - setTimeout
 function findsum(n){
     let ans = 0;

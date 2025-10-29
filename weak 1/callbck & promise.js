@@ -61,17 +61,6 @@ Readfile().then(onDone)
 
 //using promises , it is  a cleaner way to write ur code. , hence optimizing the entire code and readability.
 
-//another example of promise and this approach uses callback.
-function myownsettimeoutfunciton(fn, duration){
-    setTimeout(fn, duration);
-}
-
-myownsettimeoutfunciton(function(){
-    console.log("hi there");
-}, 1000);
-
-
-
 
 
 
