@@ -1,0 +1,168 @@
+1. pwd — Print Working Directory || Shows the current directory path you’re in.
+
+pwd
+# Output: /home/harshit/projects
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+2. cd — Change Directory || Used to move between directories.
+
+cd Documents
+cd ..
+cd /home/harshit/projects
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. ls — List Directory Contents || Lists files and folders in the current directory.
+
+ls
+ls -l     # detailed list
+ls -a     # show hidden files
+ls -lt    #listed in order
+ls -s     #list files in size order
+ls *.json #To look at all json files
+ls *.js   #To look at all js files 
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+4. mkdir — Make Directory || Creates a new directory.
+
+mkdir new_folder
+mkdir projects/test
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+5. touch — Create Empty File || Creates a blank file or updates the timestamp of an existing one.
+
+touch index.html
+touch script.js
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+6. cat — Concatenate and Display File Content || Displays the contents of a file.
+
+cat index.html
+cat file1.txt file2.txt
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+7. vi — Open File in Vim Editor || Opens a file in the vi text editor (or creates it if it doesn’t exist).
+
+vi index.html
+# press 'i' to insert, 'Esc' + ':wq' to save and exit
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+8. mv — Move or Rename Files || Moves or renames files or directories.
+
+mv old.txt new.txt      # rename
+mv file.txt /home/harshit/docs/   # move
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+9. cp — Copy Files or Directories || Copies files or directories.
+
+cp file.txt copy.txt
+cp -r folder1 folder2   # copy directory
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+10. nvm — Node Version Manager || Used to install or switch between Node.js versions.
+
+nvm install 18
+nvm use 20
+nvm list
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+11. npm — Node Package Manager || Used to manage Node.js packages and dependencies.
+
+npm init -y
+npm install express
+npm start
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+12. node — Run JavaScript with Node.js. || Executes JavaScript files outside the browser.
+
+node app.js
+node -v
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+rm — Remove Files Permanently || Deletes files from the system. Once deleted, files don’t go to trash — they’re gone permanently.
+
+rm index.js
+
+📘 Example:
+➡️ Deletes the file named index.js.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+rm -r — Remove Directories Recursively || Deletes folders and everything inside them.
+The -r flag means recursive, allowing deletion of directories and their contents.
+
+rm -r frontend
+
+
+📘 Example:
+➡️ Deletes the folder frontend and all files/subfolders inside it.
+
+⚠️ Warning: This command is permanent — misuse can wipe out entire projects.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+chmod — Change File Permissions || Modifies who can read (r), write (w), or execute (x) a file or directory.
+Stands for “change mode.”
+
+📘 Syntax:
+chmod [permissions] [filename]
+
+
+📘 Examples:
+Grant execute permission to a file:
+
+chmod +x script.sh
+
+
+➡️ Now script.sh can be executed as a program.
+
+Set specific numeric permissions:
+
+chmod 755 app.js
+
+
+➡️ Means:
+
+Owner: read, write, execute
+Group: read, execute
+Others: read, execute
+
+Remove write permission from everyone:
+chmod a-w file.txt
+
+
+📘 Common Permission Modes:
+777 → Full access for everyone (⚠️ unsafe)
+755 → Standard for executables
+644 → Standard for text/code files
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+head — Display Beginning of File || Shows the first few lines (default 10) of a file.
+
+head filename.txt
+head -n 5 filename.txt   # first 5 lines
+head -c 20 filename.txt  # first 20 bytes
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+tail — Display End of File || Shows the last few lines (default 10) of a file. Commonly used to monitor log files.
+
+tail filename.txt
+tail -n 5 filename.txt   # last 5 lines
+tail -f logfile.txt      # follow live updates
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
