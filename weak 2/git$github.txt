@@ -1,0 +1,164 @@
+(1) - What is Git?
+Git is a version control tool used to track changes in code.
+It lets you save, revert, and manage versions of your project easily.
+You can also collaborate with others without messing up code.
+
+git init          # start git repo
+git add .         # add files
+git commit -m "msg"  # save changes
+
+-----------------------------------------------------------------------------------
+
+(2) - What is Version Control?
+Version Control means keeping track of different versions of your code.
+It helps you:
+-Undo mistakes
+-Work on new features safely
+-Collaborate with teammates
+
+🧩 Git = tool, Version Control = concept
+-----------------------------------------------------------------------------------
+
+(3) - Types of Version Control Systems (VCS)
+
+Local VCS – Tracks versions on a single computer.
+🧩 Example: RCS (old system)
+
+Centralized VCS (CVCS) – One central server stores code; everyone pulls/pushes from it.
+🧩 Example: SVN, Perforce
+
+Distributed VCS (DVCS) – Every developer has a full copy of the repo. Works offline too.
+🧩 Example: Git
+
+-----------------------------------------------------------------------------------
+
+(4) - What is Git?
+Git is a Distributed Version Control System used to manage code history.
+It tracks every change made to files and allows collaboration with others.
+You can revert, branch, and merge easily.
+
+🧩 Example:
+
+git init
+git add .
+git commit -m "first commit"
+
+-----------------------------------------------------------------------------------
+
+(5) - What is GitHub?
+GitHub is a cloud-based platform that hosts Git repositories.
+It helps share code, collaborate with teams, and manage projects publicly or privately.
+
+🧩 Think: Git = tool 🛠️, GitHub = storage + collaboration 🌐
+
+🚀 Why Git?
+
+ - Tracks every code change
+ - Enables team collaboration
+ - Supports branching & merging
+ - Works offline
+ - Fast and secure
+
+-----------------------------------------------------------------------------------
+
+(6) - Local Repository
+Your local folder where Git is initialized — it stores commits, branches, and changes before uploading to GitHub.
+
+🧩 Commands:
+git init
+git add .
+git commit -m "msg"
+
+-----------------------------------------------------------------------------------
+
+(7) - Push
+Uploads your local commits to a remote repo (like GitHub).
+git push origin main
+
+-----------------------------------------------------------------------------------
+
+(8) - Pull
+Downloads the latest changes from the remote repo to your local system.
+git pull origin main
+
+-----------------------------------------------------------------------------------
+
+(10) - Git Clone
+Used to copy (download) an existing remote repository to your local system.
+
+git clone <repo-URL>
+
+-----------------------------------------------------------------------------------
+
+(11) - git add
+Used to stage changes (tell Git which files to track for commit).
+
+git add <filename>   # add a specific file
+git add .            # add all files
+
+-----------------------------------------------------------------------------------
+
+(12) -git merge
+Used to combine changes from one branch into another.
+
+git merge <branch-name>
+
+💡 Example: merging feature branch into main -
+git checkout main  
+git merge feature
+
+-----------------------------------------------------------------------------------
+
+(13) -Merge Conflict
+Happens when two branches change the same part of a file differently.
+Git can’t decide which version to keep.
+
+💥 Example:
+<<<<<< HEAD
+console.log("Hello World");
+=======
+console.log("Hi There");
+>>>>>>> feature
+
+
+You must manually edit, choose the correct version, then:
+git add <file>
+git commit
+
+
+-----------------------------------------------------------------------------------
+
+(14) - Git Conflict & Recovery Commands
+
+ 1. git log --merge 
+ Shows commit logs related to the current merge conflict.
+git log --merge
+
+ 2. git diff
+ Shows differences between branches, commits, or conflicted files.
+git diff
+
+ 3. git checkout -- <filename>
+ Discards changes in a file and restores it from the last commit.
+git checkout -- index.js
+
+ 4. git reset --mixed
+ Unstages files but keeps changes in working directory.
+git reset --mixed
+
+ 5. git merge --abort
+ Cancels an ongoing merge and returns repo to pre-merge state.
+git merge --abort
+
+ 6. git reset <commit_id>
+ Resets repository to a specific commit.
+git reset <commit_id>
+
+ Summary:
+ log --merge → see conflicts
+ diff → inspect changes
+ checkout → discard file changes
+ reset --mixed → unstage files
+ merge --abort → cancel merge
+ reset → revert commit
+
