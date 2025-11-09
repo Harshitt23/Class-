@@ -1,0 +1,9 @@
+copy all these codes to expressclass in desktop , bcz these all will run with the help of servers express.
+
+and i have alread yinitialized express and all other packages in expressclass.
+
+so copy these codes andpaste it in index.js in expressclass and click run.
+
+open http://localhost:6000/anything and u r good to go.
+
+and u can also check the get post in postman too , like this- http://localhost:4000/health-checkup?username=harshit&password=123456 

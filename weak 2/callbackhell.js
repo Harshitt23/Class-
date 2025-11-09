@@ -17,7 +17,7 @@ firstfunction().then(function(result){
 /*
 firstfunction()
 ↓
-Creates and returns a new Promise object → which immediately resolves and returns [a function]
+Creates and returns a new Promise object → which immediately resolves and returns [a function()]
 ↓
 That function (when called) again returns a new Promise → which resolves (but doesn’t return any value)
 ↓
