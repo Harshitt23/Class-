@@ -20,3 +20,5 @@ Scalable & fast: Designed for high-performance apps and large data.
 Used with the Mongoose library for easy CRUD operations (create, read, update, delete).
 Commonly used for Express + MongoDB backend stacks (like MERN).
 */
+
+//--------------------------------------------------------------------------------------------------------------
