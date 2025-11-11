@@ -12,18 +12,18 @@ Database operations
 
 //---------------------Basic Example-----------------------
 
-/*
+
 try {
   let num = notDefined; // ❌ ReferenceError
   console.log(num);
 } catch (err) {
   console.log("Caught error:", err.message);
 }
-*/
 
 //---------example with JWT which u will use in real life, so learn it.------------
 
     // 🧩 Code that might throw an error
+    try {
     const token = req.headers.authorization?.split(" ")[1];
     const decoded = jwt.verify(token, JWT_SECRET); // verify token
     const username = decoded.username;

@@ -66,9 +66,9 @@ app.post("/signin", async function (req, res) {
     });
   }
 
-  var token = jwt.sign({ username: username }, "shhhhh");
-  return res.json({
-    token,
+  var token = jwt.sign({ username: username }, "shhhhh");      //jwt.sign() — the function sign() comes from the jsonwebtoken library (const jwt = require("jsonwebtoken");) It’s used to create a token.This token is basically a compact, encoded string that proves a user’s identity.
+  return res.json({                                            //{ username: username } — the payload, This is the data you want to include inside the token.
+    token,                                                     //"shhhhh" — the secret key - This is your private secret used to sign the token. It’s like a digital signature key. The same secret must be used later in: jwt.verify(token, "shhhhh")
   });
 });
 
