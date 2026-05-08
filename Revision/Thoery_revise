@@ -1,0 +1,80 @@
+//--------------------------------------------------------Some Basics----------------------------------------------
+
+(1)-    function greet(name) {                      
+            return "Hello" + name;                 ~                 const greet = (name) => { "Hello"} + name;    
+        }                                               more short ~ const greet = (name) => `Hello ${name}`
+
+
+
+(2)-    let users = [
+            {name : harshit, Age : 23};
+            {name : Rahul, Age : 24};
+        ]
+            console.log(users[1].name);      ~     #returns Rahul
+
+(3)-    console.log("Before");
+
+        setTimeout(() = {
+            console.log("lol");
+        }, 4000);
+
+        console.log("after");     ~     #result = Before lol after   
+
+
+(4)-    const getUsers = async () => {
+        const response = await fetch(
+            "https://jsonplaceholder.typicode.com/users"
+         );
+        const data = await response.json();
+        console.log(data);
+        };
+        getUsers();
+  
+        #This is basically how frontend talks to backend/APIs.
+            async → function becomes asynchronous
+            await → wait for result
+            fetch() → API call
+           .then() → old promise handling
+        
+
+(5)-    Spread Operator - ...   (take everything from arr1 and spread it here)
+
+        const nums = [1, 2, 3];
+        const newNums = [...nums, 4];
+        console.log(newNums);
+
+        #Output:
+        [1, 2, 3, 4]
+
+
+(6)-    Rest Operator - ...   (Take all incoming values)
+
+        const add = (...numbers) => {
+        console.log(numbers);
+          };
+        add(1, 2, 3);
+
+        #Output:
+        [1, 2, 3]
+
+(7)-    Ternary Operator  -  (Short if-else.)
+        
+        age >= 18 ? "Adult" : "Minor";
+
+        #Structure:
+            condition ? true_part : false_part
+
+(8)-    Nullish Coalescing - ??
+
+        const username = null;
+        console.log(username ?? "Guest");
+
+        #Meaning:
+        if left side is null/undefined, use right side
+
+        #Output:
+        Guest
+
+(9)-    
+
+(10)-

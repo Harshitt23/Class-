@@ -75,9 +75,10 @@ SELECT * FROM users;
 
 
 
-#You’ll notice:
+#You'll notice:
     JS/TS/Python = easiest readability
     Java = verbose enterprise uncle
     Go = clean/simple backend
     Rust/C++ = lower-level power
     SQL = database communication language
+
