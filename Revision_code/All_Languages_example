@@ -1,26 +1,25 @@
 1. JavaScript
 function greet(name) {
-  return `Hello ${name}`;
-}
+  return `Hello ${name}`;          //backticks($) are used to embed variables in a string, (``) is called template literals.                                                   
+}                                  //return "Hello " + name;  ~old way of doing it is using concatenation which is used to embed variables in a string, + is called concatenation. 
+console.log(greet("Harshit"));     //template literals are more readable and easier to write than concatenation.
 
 
-
-console.log(greet("Harshit"));
 2. TypeScript
 function greet(name: string): string {
   return `Hello ${name}`;
 }
-
-
-
 console.log(greet("Harshit"));
+
+
+
 3. Python
 def greet(name):
     return f"Hello {name}"
-
-
-
 print(greet("Harshit"))
+
+
+
 4. Java
 public class Main {
     public static void main(String[] args) {
