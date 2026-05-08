@@ -5,12 +5,12 @@
         }                                               more short ~ const greet = (name) => `Hello ${name}`
 
 
-
 (2)-    let users = [
             {name : harshit, Age : 23};
             {name : Rahul, Age : 24};
         ]
             console.log(users[1].name);      ~     #returns Rahul
+
 
 (3)-    console.log("Before");
 
@@ -57,12 +57,14 @@
         #Output:
         [1, 2, 3]
 
+
 (7)-    Ternary Operator  -  (Short if-else.)
         
         age >= 18 ? "Adult" : "Minor";
 
         #Structure:
             condition ? true_part : false_part
+
 
 (8)-    Nullish Coalescing - ??
 
@@ -75,6 +77,7 @@
         #Output:
         Guest
 
-(9)-    
+
+(9)-    NILL
 
 (10)-
